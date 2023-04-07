@@ -19,6 +19,8 @@ db.once('open', () => console.log('mongodb connected !'))
 const app = express()
 const PORT = 3000
 
+app.use(express.static('public'))
+
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs'

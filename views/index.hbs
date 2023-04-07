@@ -1,1 +1,21 @@
-<p>Hello, it's index</p>
+<div class="container text-center mt-5">
+  <h2 class="mb-4">Account Login</h2>
+  <form id="login-form" action="/login" method="POST" novalidate>
+    <div class="row justify-content-center mt-3">
+      <div class="col-4">
+        <input type="email" id="userEmail" class="form-control" placeholder="Email" required>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-4">
+        <input type="password" id="userPassword" class="form-control" placeholder="password" required>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-4">
+        <button type="submit" class="btn btn-secondary">sign in</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script src="../../javascripts/loginCheck.js"></script>
